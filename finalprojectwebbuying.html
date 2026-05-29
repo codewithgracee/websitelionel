@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Tailwind - Pricing Table</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black text-white min-h-screen flex flex-col items-center justify-center p-6 object-cover" style="background-image: url('https://cdn.dribbble.com/userupload/6508149/file/original-c4197a5bf25a4356aa2bac6f82073eb2.jpg?resize=2048x1536&vertical=center'); background-size: cover; background-position: center;">
+    <div class="text-center mb-12 bg-black bg-opacity-85 p-6 rounded-lg">
+        <h1 class="text-4xl text-green-500 font-extrabold mb-8">Pembayaran MyExcellentSkills</h1>
+        <p class="text-slate-200">Available Plans</p>
+    </div>
+    <div class="grid grid-cols-2 gap-8 max-w-4xl w-full">
+        <div class="bg-sky-900 p-8 rounded-3xl border border-slate-700 flex flex-col justify-between shadow-lg">
+            <div>
+                <h2 class="text-xl font-bold mb-2">E-learning</h2>
+                <p class="text-4xl font-black text-green-500 mb-6">Rp 159.900 <span class="text-lg font-normal text-black">/bln</span></p>
+                <ul class="space-y-4 text-slate-300 mb-8">
+                    <li><span class="text-emerald-400 mr-2">✓</span> 5 Course </li>
+                    <li><span class="text-emerald-400 mr-2">✓</span> Progress Tracking </li>
+                    <li><span class="text-emerald-400 mr-2">✓</span> Certificate of Completion </li>
+                    <li><span class="text-emerald-400 mr-2">✓</span> 24/7 Support </li>
+                </ul>
+            </div>
+            <button class="w-full py-3 px-6 rounded-xl border border-emerald-600 font-semibold hover:bg-sky-600 transition">
+                Mulai Sekarang
+            </button>
+        </div>
+        <div class="relative bg-green-600 p-8 rounded-3xl border border-slate-700 flex flex-col justify-between shadow-lg">
+            <div>
+            <span class="absolute -top-4 left-1/2 
+            -translate-x-1/2 bg-yellow-400 text-indigo-900 text-xs font-black px-4 py-1 rounded-full uppercase tracking-wider">
+                Recommended
+            </span>
+            <div>
+                <h2 class="text-xl font-bold mb-2 text-black">Bootcamp</h2>
+                <p class="text-4xl font-black text-sky-900 mb-6">Rp 180.500 <span class="text-lg font-normal text-black">/bln</span></p>
+                <ul class="space-y-4 text-indigo-50 mb-8">
+                    <li><span class="text-green-700 mr-2">✓</span class="text-black"> 1 Month Bootcamp </li>
+                    <li><span class="text-green-700 mr-2">✓</span class="text-black"> Interactive Sessions </li>
+                    <li><span class="text-green-700 mr-2">✓</span class="text-black"> Personalized Feedback </li>
+                    <li><span class="text-green-700 mr-2">✓</span class="text-black"> Certificate of Completion </li>
+                </ul>
+            </div>
+            <button class="w-full py-3 px-6 rounded-xl bg-black text-green-500 font-bold hover:bg-indigo-50 transition shadow-lg">
+                Langganan Pro
+            </button>
+        </div>
+    </div>
+
+</body>
+</html>

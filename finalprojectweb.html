@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Products</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <style>
+            .carousel-caption h5, .carousel-caption p {
+                text-shadow: 2px 2px 4px #000000;
+            }
+            .carousel-item img {
+                object-fit: cover;
+                border-radius: 20px;
+                margin: 0 auto;
+                max-width: 1000px;
+                max-height: fit-content;
+                width: 100%;
+            }
+            #accordion .card {
+                border: none;
+                border-radius: 12px;
+                overflow: hidden;
+                margin-bottom: 15px;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            }
+            #accordion .card-header {
+                background-color: white !important;
+                padding: 0;
+            }
+            #accordion .btn {
+                width: 100%;
+                text-align: left;
+                color: black !important;
+                font-weight: bold;
+                padding: 15px;
+                text-decoration: none;
+            }
+            #accordion .btn:not(.collapsed) {
+                background-color: #dbeafe !important;
+                color: black !important;
+            }
+            #accordion .card-body {
+                background-color: white !important;
+                color: black !important;
+                display: block !important;
+                visibility: visible !important;
+                padding: 20px;
+            }
+            #accordion .collapse {
+                background-color: white !important;
+            }
+        </style>
+    </head>
+    <body class="bg-sky-100">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-sm bg-success navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand font-serif text-emerald-300 hover:text-emerald-400" href="#">MyExcellentSkills</a>
+                <div class="d-flex justify-content-end">
+                    <button class="btn btn-outline-light">Masuk</button>
+                    <button class="btn bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-3 ms-2 rounded">Daftar</button>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Carousel -->
+        <div id="demo" class="carousel slide mt-4" data-bs-ride="carousel">
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+            </div>
+            <!-- Slides -->
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <img src="Website final project.png" class="d-block" alt="Slide 1">
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <img src="Website final project (1).png" class="d-block" alt="Slide 2">
+                </div>
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <img src="Website final project (2).png" class="d-block" alt="Slide 3">
+                </div>
+                <!-- Slide 4 (Dengan CTA) -->
+                <div class="carousel-item">
+                    <img src="Website final project (3).png" class="d-block" alt="Slide 4">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 class="fw-bold">Bergabunglah Bersama Kami</h2>
+                        <p>Jadilah bagian dari komunitas yang berkembang.</p>
+                        <a href="finalprojectwebdaftar.html" class="btn btn-success btn-lg fw-bold">Daftar Akun</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+        
+        <!-- Cards -->
+        <p class="text-center font-bold mt-4 text-gray-700 text-lg bg-slate-200 p-2">Terbukti Berdampak dan Membuka Batasan</p>
+        <div class="container mt-3 d-flex justify-content-center gap-10 flex-wrap">
+            <!-- Card 1: Gambar Atas -->
+            <div class="card" style="width: 320px;">
+                <img class="card-img-top" 
+                    src="https://images.seattletimes.com/wp-content/uploads/2023/07/Cathy-Baxter-Moore.jpg?d=1020x1275" 
+                    alt="Profile" 
+                    style="height: 350px; object-fit: cover;">
+                <div class="card-body bg-sky-900">
+                    <h5 class="card-title text-white p-2">Cathy Moore</h5>
+                    <p class="card-text small text-white p-2">Training Designer</p>
+                    <a href="https://blog.cathy-moore.com/#:~:text=Cathy%20Moore%20is%20an%20internationally,problems%20and%20deeply%20challenging%20learners." class="btn btn-primary btn-sm w-100 p-2">See Profile</a>
+                </div>
+            </div>
+            <!-- Card 2: Gambar Bawah -->
+            <div class="card" style="width: 320px;">
+                <div class="card-body bg-sky-900">
+                    <h5 class="card-title text-white p-2">Craig Weiss</h5>
+                    <p class="card-text small text-white p-2">Creative Director</p>
+                    <a href="https://lasiggraph.org/bio/presenter/weiss-craig" class="btn btn-primary btn-sm w-100 p-2">See Profile</a>
+                </div>
+                <img class="card-img-bottom" 
+                    src="https://lasiggraph.org/sites/default/files/images/craigweiss.jpg" 
+                    alt="Profile" 
+                    style="height: 350px; object-fit: cover;">
+            </div>
+        </div>
+
+        <!-- Rintis Karir Bersama MySkill -->
+        <p class="text-center font-bold mt-4 text-gray-700 text-lg bg-slate-200 p-2">Rintis Karir Bersama MySkill</p>
+        <div class="container mt-3 d-flex justify-content-center gap-2 flex-wrap">
+            <div class="d-flex justify-content-center gap-4 flex-wrap">
+                <!-- Card 1 -->
+                <div class="card" style="width: 250px;">
+                    <img class="card-img-top" 
+                        src="https://cdn.dribbble.com/userupload/42268338/file/original-9eeaf9bfae1a86bfd0d54a65151375a9.gif"
+                        alt="Coursera" 
+                        style="height: 250px; object-fit: contain;"> 
+                    <div class="card-body bg-sky-900 text-center">
+                        <h5 class="card-title font-bold text-white p-2 mb-0">Lebih dari 1.5 Juta+ <br> Member Belajar Bersama</h5>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="card" style="width: 250px;">
+                    <img class="card-img-top" 
+                        src="https://cdn.dribbble.com/userupload/25344061/file/original-bb097da5129b8e63f246e9607a28122f.gif" 
+                        alt="Practical" 
+                        style="height: 250px; object-fit: contain;">
+                    <div class="card-body bg-sky-900 text-center">
+                        <h5 class="card-title font-bold text-white p-2 mb-0">Praktikal & Bersertifikat. <br> Bangun Skill dan Portfolio</h5>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="card" style="width: 250px;">
+                    <img class="card-img-top" 
+                        src="https://cdn.dribbble.com/userupload/23823378/file/original-e350248e3521c36d3c3de669753603e9.gif" 
+                        alt="Rating" 
+                        style="height: 250px; object-fit: contain;">
+                    <div class="card-body bg-sky-900 text-center">
+                        <h5 class="card-title font-bold text-white p-2 mb-0">4.6 Rating Course Report. <br> Award LinkedIn Top Startup</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-center font-bold mt-4 text-gray-700 text-lg bg-slate-200 p-2">Berbagai Program MyExcellentSkills</p>
+        <div class="flex flex-col md:flex-row items-center gap-6">
+            <div class="w-full md:w-1/2 h-48 m-3 p-4">
+                <img src="https://myskill.id/image/home/product/e-learning.svg" 
+                    alt="Description" 
+                    class="w-full h-full rounded-lg object-contain"> 
+            </div>
+            <!-- Text Container -->
+            <div class="w-full md:w-1/2 m-5 p-5 bg-sky-200 rounded-lg">
+                <h2 class="text-2xl font-bold mb-2">E-learning</h2>
+                <p class="text-gray-600">
+                    Pelajari ratusan skill sekali bayar. Praktik dan bersertifikat <br>
+                    ✅ Belajar fleksibel via video materi, bahan bacaan, project dan studi kasus <br>
+                    ✅ Praktikal & actionable. Bertahap dari level dasar hingga lanjut <br>
+                    ✅ Grup komunitas diskusi lifetime. Kelas gratis tiap bulannya <br>
+                </p>
+            </div>
+        </div>
+        <div class="flex flex-col md:flex-row items-center gap-6">
+            <!-- Text Container -->
+            <div class="w-full md:w-1/2 m-5 p-5 bg-sky-200 rounded-lg">
+                <h2 class="text-2xl font-bold mb-2">Bootcamp</h2>
+                <p class="text-gray-600">
+                    Intensive live class bersama experts. Praktikal & mendalam<br>
+                    ✅Kombinasi case study, diskusi dan praktik di tiap sesi. Basic to advanced<br>
+                    ✅Group mentoring semi-privat untuk bangun portfolio<br>
+                    ✅Tutor terkurasi. Memiliki lebih dari 30.000 alumn<br>
+                </p>
+            </div>
+            <div class="w-full md:w-1/2 h-48 m-3 p-4">
+                <img src="https://myskill.id/image/home/product/bootcamp.svg" 
+                    alt="Description" 
+                    class="w-full h-full rounded-lg object-contain"> 
+            </div>
+        </div>
+
+        <p class="text-center font-bold mt-4 text-gray-700 text-lg bg-slate-200 p-2">Yang Sering Ditanyakan</p>
+        <div class="container mt-3" style="max-width: 800px;">
+            <div id="accordion">
+                <div class="card">
+                    <!-- Item 1 -->
+                    <div class="card mb-3 border-0 shadow-sm">
+                        <div class="card-header bg-sky-200">
+                            <a class="btn w-100 text-start fw-bold text-dark"
+                            data-bs-toggle="collapse"
+                            href="#collapseOne">
+                                Apa itu MyExcellentSkills?
+                            </a>
+                        </div>
+                        <div id="collapseOne"
+                            class="collapse show"
+                            data-bs-parent="#accordion">
+                            <div class="card-body bg-white text-dark">
+                                MyExcellentSkills adalah platform belajar online yang menyediakan berbagai program pembelajaran untuk mengembangkan skill secara efektif dan praktis.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="card mb-3 border-0 shadow-sm">
+                        <div class="card-header bg-sky-200">
+                            <a class="collapsed btn w-100 text-start fw-bold text-dark"
+                            data-bs-toggle="collapse"
+                            href="#collapseTwo">
+                                Bagaimana cara saya bisa beli?
+                            </a>
+                        </div>
+                        <div id="collapseTwo"
+                            class="collapse"
+                            data-bs-parent="#accordion">
+                            <div class="card-body bg-white text-dark">
+                                Dengan Klik Tombol ini <a href="finalprojectwebbuying.html" class="font-bold text-blue-500 hover:text-blue-700">Beli Sekarang</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="card mb-3 border-0 shadow-sm">
+                        <div class="card-header bg-sky-200">
+                            <a class="collapsed btn w-100 text-start fw-bold text-dark"
+                            data-bs-toggle="collapse"
+                            href="#collapseThree">
+                                Apakah ada sertifikat?
+                            </a>
+                        </div>
+                        <div id="collapseThree"
+                            class="collapse"
+                            data-bs-parent="#accordion">
+                            <div class="card-body bg-white text-dark">
+                                Ya, setiap program yang selesai akan mendapatkan sertifikat digital.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom bg-success">
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block p-2">
+        <span><a class="font-serif text-emerald-300 hover:text-emerald-400" href="#">MyExcellentSkills</a></span>
+        </div>
+        <div>
+        <a href="" class="me-4 text-reset">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+            <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+            <i class="fab fa-github"></i>
+        </a>
+        </div>
+        <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+    <!-- Section: Links  -->
+    <section class="">
+        <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>Company
+            </h6>
+            <p>
+                MyExcellentSkills adalah platform pembelajaran online yang menyediakan berbagai program untuk mengembangkan skill secara efektif dan praktis. Kami berkomitmen untuk membantu individu meraih potensi terbaik mereka melalui pembelajaran yang inovatif dan berkualitas tinggi.
+            </p>
+            </div>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+                Products
+            </h6>
+            <p>
+                <a href="#!" class="text-reset">E-learning</a>
+            </p>
+            <p>
+                <a href="#!" class="text-reset">Bootcamp</a>
+            </p>
+            </div>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+                MyExcellentSkills.ID
+            </h6>
+            <p>
+                <a href="#!" class="text-reset">Tentang</a>
+            </p>
+            <p>
+                <a href="#!" class="text-reset">Karir</a>
+            </p>
+            <p>
+                <a href="#!" class="text-reset">Kerja Sama</a>
+            </p>
+            <p>
+                <a href="#!" class="text-reset">Blog</a>
+            </p>
+            </div>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4 px-3">Contact</h6>
+            <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+            <p>
+                <i class="fas fa-envelope me-3"></i>
+                info@example.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+            <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+            </div>
+            <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+        </div>
+    </section>
+    <!-- Section: Links  -->
+    <!-- Copyright -->
+    <div class="text-center p-4 bg-sky-900 text-white">
+        © 2021 Copyright:
+        <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+    </footer>
+</html>
